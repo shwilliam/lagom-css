@@ -2,6 +2,10 @@
 
 > Functional, utility-first CSS
 
+## Unused CSS
+
+Due to their nature, utility CSS libraries can be quite large. If performance or file-size matters to you (or you're using this production), I would recommend using a tool such as [PurifyCSS](https://github.com/purifycss/purifycss) to remove unused CSS. Doing this, the CSS file that you would want to target is `/dist/lagom.min.css` in this package (download it [here](https://raw.githubusercontent.com/shwilliam/lagom-css/master/dist/lagom.min.css)).
+
 ## Contributing
 
 This project is open to and encourages contributions! Feel free to discuss any proposed changes in the [issues](https://github.com/shwilliam/lagom-css/issues). If you wish to work on this project:
