@@ -1,4 +1,4 @@
-import { configure } from '@storybook/html'
+import { configure } from '@storybook/react'
 import '../dist/lagom.min.css'
 
 function loadStories() {

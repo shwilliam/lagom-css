@@ -1,4 +1,7 @@
-import { storiesOf } from '@storybook/html'
+import React from 'react'
+import { storiesOf } from '@storybook/react'
 
 storiesOf('text colors', module)
-  .add('red', () => '<p class="red">red</p>')
+  .add('red', () => (
+    <p class="red">red</p>
+  ))
