@@ -3,7 +3,8 @@ import 'loki/configure-react'
 import '../dist/lagom.min.css'
 
 function loadStories() {
-  require('../stories/text-colors.js')
+  require('../stories/margin.js')
+  require('../stories/padding.js')
 }
 
 configure(loadStories, module)
