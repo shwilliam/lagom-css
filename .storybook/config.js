@@ -1,4 +1,5 @@
 import { configure } from '@storybook/react'
+import 'loki/configure-react';
 import '../dist/lagom.min.css'
 
 function loadStories() {

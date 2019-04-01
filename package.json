@@ -6,7 +6,8 @@
   "scripts": {
     "build": "postcss src/*.css > dist/lagom.min.css",
     "storybook": "start-storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "loki test",
+    "approve": "loki approve"
   },
   "repository": {
     "type": "git",
@@ -29,8 +30,26 @@
     "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
     "cssnano": "^4.1.10",
+    "loki": "^0.15.0",
     "postcss-cli": "^6.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "loki": {
+    "diffingEngine": "looks-same",
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false,
+        "fitWindow": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }
