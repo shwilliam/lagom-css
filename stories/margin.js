@@ -7,33 +7,33 @@ import { storiesOf } from '@storybook/react'
       .forEach((i) => {
         storiesOf('margin', module)
           .add(`${
-            side ?
-              `${side} ` :
-              ''
+            side
+              ? `${side} `
+              : ''
           }${i}`, () => (
             <span
               style={{
                 border: '1px solid black',
-                display: 'inline-block',
+                display: 'inline-block'
               }}
             >
               <span
                 className={
-                    `m${
-                      side.length > 0 ?
-                        side[0] :
-                        ''
-                    }${i}`
-                  }
+                  `m${
+                    side.length > 0
+                      ? side[0]
+                      : ''
+                  }${i}`
+                }
                 style={{
-                  display: 'inline-block',
+                  display: 'inline-block'
                 }}
               >
                 {
                   `m${
-                    side.length > 0 ?
-                      side[0] :
-                      ''
+                    side.length > 0
+                      ? side[0]
+                      : ''
                   }${i}`
                 }
               </span>

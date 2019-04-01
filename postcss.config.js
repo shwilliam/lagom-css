@@ -1,10 +1,10 @@
 module.exports = {
   plugins: [
     require('autoprefixer')({
-      grid: true,
+      grid: true
     }),
     require('cssnano')({
-      preset: 'default',
-    }),
-  ],
+      preset: 'default'
+    })
+  ]
 }
