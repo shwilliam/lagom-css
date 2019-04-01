@@ -4,6 +4,7 @@
   "description": "Functional, utility-first CSS",
   "main": "dist/lagom.min.css",
   "scripts": {
+    "build": "postcss src/*.css -o dist/lagom.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,7 @@
   },
   "homepage": "https://github.com/shwilliam/lagom-css#readme",
   "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "postcss-cli": "^6.1.2"
   }
 }
