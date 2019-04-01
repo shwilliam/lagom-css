@@ -1,0 +1,26 @@
+{
+  "name": "lagom-css",
+  "version": "0.1.0-alpha.0",
+  "description": "Functional, utility-first CSS",
+  "main": "dist/lagom.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shwilliam/lagom-css.git"
+  },
+  "keywords": [
+    "lagom",
+    "css",
+    "utility"
+  ],
+  "author": "William L <w-lindvall@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shwilliam/lagom-css/issues"
+  },
+  "homepage": "https://github.com/shwilliam/lagom-css#readme",
+  "devDependencies": {
+  }
+}
