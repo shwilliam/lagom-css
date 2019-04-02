@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 ['sans', 'system-sans', 'serif', 'system-serif', 'code', 'system-code']
   .forEach((fontFace) => {
-    storiesOf('fonts', module)
+    storiesOf('font face', module)
       .add(
         fontFace, () => (
           <p className={`${fontFace}`}>
