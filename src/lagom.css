@@ -11,6 +11,38 @@
 .code { font-family: Consolas, monaco, monospace; }
 .system-code { font-family: monospace; }
 
+/* Source: https://rsms.me/inter/dynmetrics/ */
+.f1 {
+  font-size: 40px;
+  letter-spacing: -0.022em;
+  line-height: 56px;
+}
+.f2 {
+  font-size: 24px;
+  letter-spacing: -0.019em;
+  line-height: 34px;
+}
+.f3 {
+  font-size: 18px;
+  letter-spacing: -0.014em;
+  line-height: 25px;
+}
+.f4 {
+  font-size: 16px;
+  letter-spacing: -0.011em;
+  line-height: 22px;
+}
+.f5 {
+  font-size: 14px;
+  letter-spacing: -0.006em;
+  line-height: 20px;
+}
+.f6 {
+  font-size: 12px;
+  letter-spacing: 0em;
+  line-height: 17px;
+}
+
 /* Margins */
 /* Increments by 1rem */
 .m0 { margin: 0; }
