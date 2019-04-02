@@ -1,16 +1,23 @@
-/*-------------------------------
-| Lagom CSS                     |
-| Functional, utility-first CSS |
--------------------------------*/
+/*-------------------------------\
+| Lagom CSS                      |
+| Functional, utility-first CSS  |
+|                                |
+| Contents:                      |
+| - Font faces                   |
+| - Font sizes                   |
+| - Margins                      |
+| - Padding                      |
+\-------------------------------*/
 
-/* Fonts */
-.sans { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
+/* Font faces */
+.sans { font-family: -apple-system, BlinkMacSystemFont, 'avenir next ', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
 .system-sans { font-family: sans-serif; }
 .serif { font-family: georgia, times, serif; }
 .system-serif { font-family: serif; }
 .code { font-family: Consolas, monaco, monospace; }
 .system-code { font-family: monospace; }
 
+/* Font sizes */
 /* Source: https://rsms.me/inter/dynmetrics/ */
 .f1 {
   font-size: 40px;
