@@ -7,6 +7,7 @@ function loadStories() {
   require('../stories/font-sizes.js')
   require('../stories/font-styles.js')
   require('../stories/line-heights.js')
+  require('../stories/letter-spacing.js')
   require('../stories/margin.js')
   require('../stories/padding.js')
   require('../stories/outline.js')
