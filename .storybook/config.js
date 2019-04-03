@@ -14,6 +14,7 @@ function loadStories() {
   require('../stories/border-style.js')
   require('../stories/border-width.js')
   require('../stories/border-side-reset.js')
+  require('../stories/opacity.js')
 }
 
 configure(loadStories, module)
