@@ -9,6 +9,7 @@
 | - Text transforms              |
 | - Text decoration              |
 | - Line heights                 |
+| - Letter spacing               |
 | - Margins                      |
 | - Padding                      |
 | - Outline                      |
@@ -78,6 +79,11 @@
 .lh1 { line-height: 1; }
 .lh125 { line-height: 1.25; }
 .lh150 { line-height: 1.5; }
+
+/* Letter spacing */
+.ls0 { letter-spacing: 0; }
+.ls-tight { letter-spacing: -0.05em; }
+.ls-wide { letter-spacing: 0.05em; }
 
 /* Margins */
 /* Increments by 1rem */
