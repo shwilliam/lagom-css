@@ -13,6 +13,7 @@
 | - Outline                      |
 | - Borders                      |
 | - Opacity                      |
+| - Input resets                 |
 \-------------------------------*/
 
 /* Font faces */
@@ -211,3 +212,10 @@
 .o80 { opacity: .8; }
 .o90 { opacity: .9; }
 .o100 { opacity: 1; }
+
+/* Input resets */
+.reset-list { list-style-type: none; }
+
+/* Source: https://github.com/tachyons-css/tachyons/blob/master/css/tachyons.css */
+.reset-input { -webkit-appearance: none; -moz-appearance: none; }
+.reset-button::-moz-focus-inner, .reset-button::-moz-focus-inner { border: 0; padding: 0; }
