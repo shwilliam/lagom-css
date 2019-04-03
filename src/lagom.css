@@ -9,6 +9,7 @@
 | - Padding                      |
 | - Outline                      |
 | - Borders                      |
+| - Opacity                      |
 \-------------------------------*/
 
 /* Font faces */
@@ -178,3 +179,16 @@
 .br0 { border-right-width: 0; }
 .bb0 { border-bottom-width: 0; }
 .bl0 { border-left-width: 0; }
+
+/* Opacity */
+.o0 { opacity: 0; }
+.o10 { opacity: .1; }
+.o20 { opacity: .2; }
+.o30 { opacity: .3; }
+.o40 { opacity: .4; }
+.o50 { opacity: .5; }
+.o60 { opacity: .6; }
+.o70 { opacity: .7; }
+.o80 { opacity: .8; }
+.o90 { opacity: .9; }
+.o100 { opacity: 1; }
