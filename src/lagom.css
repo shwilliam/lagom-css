@@ -8,6 +8,7 @@
 | - Font styles                  |
 | - Text transforms              |
 | - Text decoration              |
+| - Line heights                 |
 | - Margins                      |
 | - Padding                      |
 | - Outline                      |
@@ -72,6 +73,11 @@
 .underline { text-decoration: underline; }
 .strike { text-decoration: line-through; }
 .decoration-none { text-decoration: none; }
+
+/* Line heights */
+.lh1 { line-height: 1; }
+.lh125 { line-height: 1.25; }
+.lh150 { line-height: 1.5; }
 
 /* Margins */
 /* Increments by 1rem */
