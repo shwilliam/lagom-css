@@ -19,6 +19,8 @@ function loadStories() {
   require('../stories/border-side-reset.js')
   require('../stories/opacity.js')
   require('../stories/input-resets.js')
+  require('../stories/widths.js')
+  require('../stories/heights.js')
 }
 
 configure(loadStories, module)
