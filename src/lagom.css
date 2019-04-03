@@ -104,6 +104,7 @@
 .mt6 { margin-top: 6rem; }
 
 .mr0 { margin-right: 0; }
+.mra { margin-right: auto; }
 .mr1 { margin-right: 1rem; }
 .mr2 { margin-right: 2rem; }
 .mr3 { margin-right: 3rem; }
@@ -120,6 +121,7 @@
 .mb6 { margin-bottom: 6rem; }
 
 .ml0 { margin-left: 0; }
+.mla { margin-left: auto; }
 .ml1 { margin-left: 1rem; }
 .ml2 { margin-left: 2rem; }
 .ml3 { margin-left: 3rem; }
