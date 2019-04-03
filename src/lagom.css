@@ -5,6 +5,9 @@
 | Contents:                      |
 | - Font faces                   |
 | - Font sizes                   |
+| - Font styles                  |
+| - Text transforms              |
+| - Text decoration              |
 | - Margins                      |
 | - Padding                      |
 | - Outline                      |
@@ -52,6 +55,22 @@
   letter-spacing: 0em;
   line-height: 17px;
 }
+
+/* Font styles */
+.i { font-style: italic; }
+.n { font-style: normal; }
+.b { font-weight: bold; }
+
+/* Text transforms */
+.capitalize { text-transform: capitalize; }
+.lower { text-transform: lowercase; }
+.upper { text-transform: uppercase; }
+.upper-s { font-variant: small-caps; }
+
+/* Text decoration */
+.underline { text-decoration: underline; }
+.strike { text-decoration: line-through; }
+.decoration-none { text-decoration: none; }
 
 /* Margins */
 /* Increments by 1rem */
