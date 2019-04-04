@@ -18,6 +18,7 @@
 | - Input resets                 |
 | - Widths                       |
 | - Heights                      |
+| - Display                      |
 \-------------------------------*/
 
 /* Font faces */
@@ -279,3 +280,9 @@
 .h80 { height: 80%; }
 .h90 { height: 90%; }
 .h100 { height: 100%; }
+
+/* Display */
+.dn { display: none; }
+.db { display: block; }
+.di { display: inline; }
+.dib { display: inline-block; }
