@@ -12,6 +12,7 @@ function loadStories() {
   require('../stories/text-align.js')
   require('../stories/floats.js')
   require('../stories/clearfix.js')
+  require('../stories/positioning.js')
   require('../stories/margin.js')
   require('../stories/padding.js')
   require('../stories/outline.js')

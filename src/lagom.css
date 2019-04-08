@@ -14,6 +14,7 @@
 | - Clearfix                     |
 | - Line heights                 |
 | - Letter spacing               |
+| - Positioning                  |
 | - Margins                      |
 | - Padding                      |
 | - Outline                      |
@@ -122,6 +123,44 @@
 .ls4 { letter-spacing: 0.5em; }
 .ls5 { letter-spacing: 0.75em; }
 .ls6 { letter-spacing: 1em; }
+
+/* Positioning */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.static { position: static; }
+
+.top0 { top: 0; }
+.top1 { top: 1rem; }
+.top2 { top: 2rem; }
+.top3 { top: 3rem; }
+.top4 { top: 4rem; }
+.top5 { top: 5rem; }
+.top6 { top: 6rem; }
+
+.right0 { right: 0; }
+.right1 { right: 1rem; }
+.right2 { right: 2rem; }
+.right3 { right: 3rem; }
+.right4 { right: 4rem; }
+.right5 { right: 5rem; }
+.right6 { right: 6rem; }
+
+.bottom0 { bottom: 0; }
+.bottom1 { bottom: 1rem; }
+.bottom2 { bottom: 2rem; }
+.bottom3 { bottom: 3rem; }
+.bottom4 { bottom: 4rem; }
+.bottom5 { bottom: 5rem; }
+.bottom6 { bottom: 6rem; }
+
+.left0 { left: 0; }
+.left1 { left: 1rem; }
+.left2 { left: 2rem; }
+.left3 { left: 3rem; }
+.left4 { left: 4rem; }
+.left5 { left: 5rem; }
+.left6 { left: 6rem; }
 
 /* Margins */
 /* Increments by 1rem */
