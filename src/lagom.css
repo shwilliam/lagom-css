@@ -8,6 +8,8 @@
 | - Font styles                  |
 | - Text transforms              |
 | - Text decoration              |
+| - Text align                   |
+| - Floats                       |
 | - Line heights                 |
 | - Letter spacing               |
 | - Margins                      |
@@ -78,6 +80,16 @@
 .underline { text-decoration: underline; }
 .strike { text-decoration: line-through; }
 .decoration-none { text-decoration: none; }
+
+/* Text align */
+.tl { text-align: left; }
+.tr { text-align: right; }
+.tc { text-align: center; }
+.tj { text-align: justify; }
+
+/* Floats */
+.fl { float: left; }
+.fr { float: right; }
 
 /* Line heights */
 .lh1 { line-height: 1; }
