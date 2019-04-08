@@ -21,6 +21,7 @@ function loadStories() {
   require('../stories/input-resets.js')
   require('../stories/widths.js')
   require('../stories/heights.js')
+  require('../stories/display.js')
 }
 
 configure(loadStories, module)
