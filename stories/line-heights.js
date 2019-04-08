@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-[1, 125, 150]
+[1, 2, 3, 4, 5, 6]
   .forEach((modifier) => {
     storiesOf('line heights', module)
       .add(

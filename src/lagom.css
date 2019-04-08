@@ -80,13 +80,20 @@
 
 /* Line heights */
 .lh1 { line-height: 1; }
-.lh125 { line-height: 1.25; }
-.lh150 { line-height: 1.5; }
+.lh2 { line-height: 1.125; }
+.lh3 { line-height: 1.25; }
+.lh4 { line-height: 1.375; }
+.lh5 { line-height: 1.5; }
+.lh6 { line-height: 2; }
 
 /* Letter spacing */
 .ls0 { letter-spacing: 0; }
-.ls-tight { letter-spacing: -0.05em; }
-.ls-wide { letter-spacing: 0.05em; }
+.ls1 { letter-spacing: -0.5em; }
+.ls2 { letter-spacing: -0.25em; }
+.ls3 { letter-spacing: 0.25em; }
+.ls4 { letter-spacing: 0.5em; }
+.ls5 { letter-spacing: 0.75em; }
+.ls6 { letter-spacing: 1em; }
 
 /* Margins */
 /* Increments by 1rem */
@@ -219,13 +226,22 @@
 
 /* Opacity */
 .o0 { opacity: 0; }
+.o1 { opacity: 0.05; }
+.o2 { opacity: 0.2; }
+.o3 { opacity: 0.4; }
+.o4 { opacity: 0.6; }
+.o5 { opacity: 0.8; }
+.o6 { opacity: 1; }
+
 .o10 { opacity: .1; }
 .o20 { opacity: .2; }
+.o25 { opacity: .25; }
 .o30 { opacity: .3; }
 .o40 { opacity: .4; }
 .o50 { opacity: .5; }
 .o60 { opacity: .6; }
 .o70 { opacity: .7; }
+.o75 { opacity: .75; }
 .o80 { opacity: .8; }
 .o90 { opacity: .9; }
 .o100 { opacity: 1; }
