@@ -6,6 +6,7 @@
   "scripts": {
     "build": "postcss src/*.css > dist/lagom.min.css",
     "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o docs",
     "test": "loki test",
     "approve": "loki approve"
   },
