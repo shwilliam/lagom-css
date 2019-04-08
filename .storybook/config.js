@@ -10,6 +10,7 @@ function loadStories() {
   require('../stories/letter-spacing.js')
   require('../stories/text-align.js')
   require('../stories/floats.js')
+  require('../stories/clearfix.js')
   require('../stories/margin.js')
   require('../stories/padding.js')
   require('../stories/outline.js')

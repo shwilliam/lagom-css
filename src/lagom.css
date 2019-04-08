@@ -10,6 +10,7 @@
 | - Text decoration              |
 | - Text align                   |
 | - Floats                       |
+| - Clearfix                     |
 | - Line heights                 |
 | - Letter spacing               |
 | - Margins                      |
@@ -90,6 +91,12 @@
 /* Floats */
 .fl { float: left; }
 .fr { float: right; }
+
+/* Clearfix */
+/* Source: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
 
 /* Line heights */
 .lh1 { line-height: 1; }
