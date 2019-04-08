@@ -8,6 +8,7 @@
 | - Font styles                  |
 | - Text transforms              |
 | - Text decoration              |
+| - Whitespace                   |
 | - Text align                   |
 | - Floats                       |
 | - Clearfix                     |
@@ -83,6 +84,11 @@
 .underline { text-decoration: underline; }
 .strike { text-decoration: line-through; }
 .decoration-none { text-decoration: none; }
+
+/* Whitespace */
+.nowrap { white-space: nowrap; }
+.pre { white-space: pre; }
+.pre-line { white-space: pre-line; }
 
 /* Text align */
 .tl { text-align: left; }
