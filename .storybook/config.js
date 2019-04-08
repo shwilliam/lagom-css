@@ -22,6 +22,7 @@ function loadStories() {
   require('../stories/widths.js')
   require('../stories/heights.js')
   require('../stories/display.js')
+  require('../stories/z-index.js')
 }
 
 configure(loadStories, module)
