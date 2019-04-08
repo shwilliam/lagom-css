@@ -2,11 +2,24 @@
 
 > Functional, utility-first CSS
 
+![npm version](https://img.shields.io/npm/v/lagom-css.svg)
+![npm bundle size](https://img.shields.io/bundlephobia/min/lagom-css.svg)
+
 ## About
 
 Lagom is a CSS library that focuses on quick & straightforward class-based, utility-first styling. Inspried by projects such as [Tachyons](https://github.com/tachyons-css/tachyons) & [Wing](https://github.com/kbrsh/wing), which take similar approaches, Lagom uses class names & size increments that make sense and allow users to intuitively style their site/app without constantly refering to the CSS library's docs.
 
 You can find an overview of the available styles in use [here](https://shwilliam.github.io/lagom-css/).
+
+## Getting started
+
+The easiest way to use this library is probably to drop the following link tag in the head of your HTML file:
+
+```html
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/lagom-css" />
+```
+
+If you are using a bundler, such as webpack, you can install the package from npm by running `npm i lagom-css` and import it in JavaScript (`import 'lagom-css'`).
 
 ## Unused CSS
 
