@@ -26,8 +26,10 @@ function loadStories() {
   require('../stories/input-resets.js')
   require('../stories/widths.js')
   require('../stories/max-widths.js')
+  require('../stories/min-widths.js')
   require('../stories/heights.js')
   require('../stories/max-heights.js')
+  require('../stories/min-heights.js')
   require('../stories/display.js')
   require('../stories/z-index.js')
 }

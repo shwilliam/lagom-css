@@ -23,8 +23,10 @@
 | - Input resets                 |
 | - Widths                       |
 | - Max widths                   |
+| - Min widths                   |
 | - Heights                      |
 | - Max heights                  |
+| - Min heights                  |
 | - Display                      |
 | - Z-index                      |
 \-------------------------------*/
@@ -372,6 +374,36 @@
 .mw90vw { max-width: 90vw; }
 .mw100vw { max-width: 100vw; }
 
+/* Min widths */
+.minw1 { min-width: 2rem; }
+.minw2 { min-width: 4rem; }
+.minw3 { min-width: 8rem; }
+.minw4 { min-width: 16rem; }
+.minw5 { min-width: 32rem; }
+.minw6 { min-width: 64rem; }
+
+.minw10 { min-width: 10%; }
+.minw20 { min-width: 20%; }
+.minw30 { min-width: 30%; }
+.minw40 { min-width: 40%; }
+.minw50 { min-width: 50%; }
+.minw60 { min-width: 60%; }
+.minw70 { min-width: 70%; }
+.minw80 { min-width: 80%; }
+.minw90 { min-width: 90%; }
+.minw100 { min-width: 100%; }
+
+.minw10vw { min-width: 10vw; }
+.minw20vw { min-width: 20vw; }
+.minw30vw { min-width: 30vw; }
+.minw40vw { min-width: 40vw; }
+.minw50vw { min-width: 50vw; }
+.minw60vw { min-width: 60vw; }
+.minw70vw { min-width: 70vw; }
+.minw80vw { min-width: 80vw; }
+.minw90vw { min-width: 90vw; }
+.minw100vw { min-width: 100vw; }
+
 /* Heights */
 .h0 { height: 0; }
 .h1 { height: 1rem; }
@@ -423,6 +455,36 @@
 .mh80vh { max-height: 80vh; }
 .mh90vh { max-height: 90vh; }
 .mh100vh { max-height: 100vh; }
+
+/* Min heights */
+.minh1 { min-height: 2rem; }
+.minh2 { min-height: 4rem; }
+.minh3 { min-height: 8rem; }
+.minh4 { min-height: 16rem; }
+.minh5 { min-height: 32rem; }
+.minh6 { min-height: 64rem; }
+
+.minh10 { min-height: 10%; }
+.minh20 { min-height: 20%; }
+.minh30 { min-height: 30%; }
+.minh40 { min-height: 40%; }
+.minh50 { min-height: 50%; }
+.minh60 { min-height: 60%; }
+.minh70 { min-height: 70%; }
+.minh80 { min-height: 80%; }
+.minh90 { min-height: 90%; }
+.minh100 { min-height: 100%; }
+
+.minh10vh { min-height: 10vh; }
+.minh20vh { min-height: 20vh; }
+.minh30vh { min-height: 30vh; }
+.minh40vh { min-height: 40vh; }
+.minh50vh { min-height: 50vh; }
+.minh60vh { min-height: 60vh; }
+.minh70vh { min-height: 70vh; }
+.minh80vh { min-height: 80vh; }
+.minh90vh { min-height: 90vh; }
+.minh100vh { min-height: 100vh; }
 
 /* Display */
 .dn { display: none; }
