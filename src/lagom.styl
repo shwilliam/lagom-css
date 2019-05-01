@@ -3,6 +3,7 @@
 | Functional, utility-first CSS  |
 |                                |
 | Contents:                      |
+| - Rhythm                       |
 | - Font faces                   |
 | - Font sizes                   |
 | - Font styles                  |
@@ -30,6 +31,11 @@
 | - Display                      |
 | - Z-index                      |
 \-------------------------------*/
+
+/* Rhythm  */
+/* Used to compute 6, evenly-sized size increments */
+rhythm(min, max, i)
+  min + (((max - min) / 5) * (6 - i))
 
 /* Font faces */
 .sans { font-family: -apple-system, BlinkMacSystemFont, 'avenir next ', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
@@ -110,21 +116,21 @@
 .cf { *zoom: 1; }
 
 /* Line heights */
-.lh1 { line-height: 1; }
-.lh2 { line-height: 1.125; }
-.lh3 { line-height: 1.25; }
-.lh4 { line-height: 1.375; }
-.lh5 { line-height: 1.5; }
-.lh6 { line-height: 2; }
+.lh1 { line-height: rhythm(1, 2, 1); }
+.lh2 { line-height: rhythm(1, 2, 2); }
+.lh3 { line-height: rhythm(1, 2, 3); }
+.lh4 { line-height: rhythm(1, 2, 4); }
+.lh5 { line-height: rhythm(1, 2, 5); }
+.lh6 { line-height: rhythm(1, 2, 6); }
 
 /* Letter spacing */
 .ls0 { letter-spacing: 0; }
-.ls1 { letter-spacing: -0.5em; }
-.ls2 { letter-spacing: -0.25em; }
-.ls3 { letter-spacing: 0.25em; }
-.ls4 { letter-spacing: 0.5em; }
-.ls5 { letter-spacing: 0.75em; }
-.ls6 { letter-spacing: 1em; }
+.ls1 { letter-spacing: rhythm(-0.1rem, 0.5rem, 1); }
+.ls2 { letter-spacing: rhythm(-0.1rem, 0.5rem, 2); }
+.ls3 { letter-spacing: rhythm(-0.1rem, 0.5rem, 3); }
+.ls4 { letter-spacing: rhythm(-0.1rem, 0.5rem, 4); }
+.ls5 { letter-spacing: rhythm(-0.1rem, 0.5rem, 5); }
+.ls6 { letter-spacing: rhythm(-0.1rem, 0.5rem, 6); }
 
 /* Positioning */
 .relative { position: relative; }
@@ -133,122 +139,122 @@
 .static { position: static; }
 
 .top0 { top: 0; }
-.top1 { top: 1rem; }
-.top2 { top: 2rem; }
-.top3 { top: 3rem; }
-.top4 { top: 4rem; }
-.top5 { top: 5rem; }
-.top6 { top: 6rem; }
+.top1 { top: rhythm(1rem, 6rem, 6); }
+.top2 { top: rhythm(1rem, 6rem, 5); }
+.top3 { top: rhythm(1rem, 6rem, 4); }
+.top4 { top: rhythm(1rem, 6rem, 3); }
+.top5 { top: rhythm(1rem, 6rem, 2); }
+.top6 { top: rhythm(1rem, 6rem, 1); }
 
 .right0 { right: 0; }
-.right1 { right: 1rem; }
-.right2 { right: 2rem; }
-.right3 { right: 3rem; }
-.right4 { right: 4rem; }
-.right5 { right: 5rem; }
-.right6 { right: 6rem; }
+.right1 { right: rhythm(1rem, 6rem, 6); }
+.right2 { right: rhythm(1rem, 6rem, 5); }
+.right3 { right: rhythm(1rem, 6rem, 4); }
+.right4 { right: rhythm(1rem, 6rem, 3); }
+.right5 { right: rhythm(1rem, 6rem, 2); }
+.right6 { right: rhythm(1rem, 6rem, 1); }
 
 .bottom0 { bottom: 0; }
-.bottom1 { bottom: 1rem; }
-.bottom2 { bottom: 2rem; }
-.bottom3 { bottom: 3rem; }
-.bottom4 { bottom: 4rem; }
-.bottom5 { bottom: 5rem; }
-.bottom6 { bottom: 6rem; }
+.bottom1 { bottom: rhythm(1rem, 6rem, 6); }
+.bottom2 { bottom: rhythm(1rem, 6rem, 5); }
+.bottom3 { bottom: rhythm(1rem, 6rem, 4); }
+.bottom4 { bottom: rhythm(1rem, 6rem, 3); }
+.bottom5 { bottom: rhythm(1rem, 6rem, 2); }
+.bottom6 { bottom: rhythm(1rem, 6rem, 1); }
 
 .left0 { left: 0; }
-.left1 { left: 1rem; }
-.left2 { left: 2rem; }
-.left3 { left: 3rem; }
-.left4 { left: 4rem; }
-.left5 { left: 5rem; }
-.left6 { left: 6rem; }
+.left1 { left: rhythm(1rem, 6rem, 6); }
+.left2 { left: rhythm(1rem, 6rem, 5); }
+.left3 { left: rhythm(1rem, 6rem, 4); }
+.left4 { left: rhythm(1rem, 6rem, 3); }
+.left5 { left: rhythm(1rem, 6rem, 2); }
+.left6 { left: rhythm(1rem, 6rem, 1); }
 
 /* Margins */
 /* Increments by 1rem */
 .m0 { margin: 0; }
-.m1 { margin: 1rem; }
-.m2 { margin: 2rem; }
-.m3 { margin: 3rem; }
-.m4 { margin: 4rem; }
-.m5 { margin: 5rem; }
-.m6 { margin: 6rem; }
+.m1 { margin: rhythm(1rem, 6rem, 1); }
+.m2 { margin: rhythm(1rem, 6rem, 2); }
+.m3 { margin: rhythm(1rem, 6rem, 3); }
+.m4 { margin: rhythm(1rem, 6rem, 4); }
+.m5 { margin: rhythm(1rem, 6rem, 5); }
+.m6 { margin: rhythm(1rem, 6rem, 6); }
 
 .mt0 { margin-top: 0; }
-.mt1 { margin-top: 1rem; }
-.mt2 { margin-top: 2rem; }
-.mt3 { margin-top: 3rem; }
-.mt4 { margin-top: 4rem; }
-.mt5 { margin-top: 5rem; }
-.mt6 { margin-top: 6rem; }
+.mt1 { margin-top: rhythm(1rem, 6rem, 1); }
+.mt2 { margin-top: rhythm(1rem, 6rem, 2); }
+.mt3 { margin-top: rhythm(1rem, 6rem, 3); }
+.mt4 { margin-top: rhythm(1rem, 6rem, 4); }
+.mt5 { margin-top: rhythm(1rem, 6rem, 5); }
+.mt6 { margin-top: rhythm(1rem, 6rem, 6); }
 
 .mr0 { margin-right: 0; }
 .mra { margin-right: auto; }
-.mr1 { margin-right: 1rem; }
-.mr2 { margin-right: 2rem; }
-.mr3 { margin-right: 3rem; }
-.mr4 { margin-right: 4rem; }
-.mr5 { margin-right: 5rem; }
-.mr6 { margin-right: 6rem; }
+.mr1 { margin-right: rhythm(1rem, 6rem, 1); }
+.mr2 { margin-right: rhythm(1rem, 6rem, 2); }
+.mr3 { margin-right: rhythm(1rem, 6rem, 3); }
+.mr4 { margin-right: rhythm(1rem, 6rem, 4); }
+.mr5 { margin-right: rhythm(1rem, 6rem, 5); }
+.mr6 { margin-right: rhythm(1rem, 6rem, 6); }
 
 .mb0 { margin-bottom: 0; }
-.mb1 { margin-bottom: 1rem; }
-.mb2 { margin-bottom: 2rem; }
-.mb3 { margin-bottom: 3rem; }
-.mb4 { margin-bottom: 4rem; }
-.mb5 { margin-bottom: 5rem; }
-.mb6 { margin-bottom: 6rem; }
+.mb1 { margin-bottom: rhythm(1rem, 6rem, 1); }
+.mb2 { margin-bottom: rhythm(1rem, 6rem, 2); }
+.mb3 { margin-bottom: rhythm(1rem, 6rem, 3); }
+.mb4 { margin-bottom: rhythm(1rem, 6rem, 4); }
+.mb5 { margin-bottom: rhythm(1rem, 6rem, 5); }
+.mb6 { margin-bottom: rhythm(1rem, 6rem, 6); }
 
 .ml0 { margin-left: 0; }
 .mla { margin-left: auto; }
-.ml1 { margin-left: 1rem; }
-.ml2 { margin-left: 2rem; }
-.ml3 { margin-left: 3rem; }
-.ml4 { margin-left: 4rem; }
-.ml5 { margin-left: 5rem; }
-.ml6 { margin-left: 6rem; }
+.ml1 { margin-left: rhythm(1rem, 6rem, 1); }
+.ml2 { margin-left: rhythm(1rem, 6rem, 2); }
+.ml3 { margin-left: rhythm(1rem, 6rem, 3); }
+.ml4 { margin-left: rhythm(1rem, 6rem, 4); }
+.ml5 { margin-left: rhythm(1rem, 6rem, 5); }
+.ml6 { margin-left: rhythm(1rem, 6rem, 6); }
 
 /* Padding */
 /* Increments by 0.25rem */
 .p0 { padding: 0; }
-.p1 { padding: 0.25rem; }
-.p2 { padding: 0.5rem; }
-.p3 { padding: 0.75rem; }
-.p4 { padding: 1rem; }
-.p5 { padding: 1.25rem; }
-.p6 { padding: 1.5rem; }
+.p1 { padding: rhythm(0.25rem, 1.5rem, 1); }
+.p2 { padding: rhythm(0.25rem, 1.5rem, 2); }
+.p3 { padding: rhythm(0.25rem, 1.5rem, 3); }
+.p4 { padding: rhythm(0.25rem, 1.5rem, 4); }
+.p5 { padding: rhythm(0.25rem, 1.5rem, 5); }
+.p6 { padding: rhythm(0.25rem, 1.5rem, 6); }
 
 .pt0 { padding-top: 0; }
-.pt1 { padding-top: 0.25rem; }
-.pt2 { padding-top: 0.5rem; }
-.pt3 { padding-top: 0.75rem; }
-.pt4 { padding-top: 1rem; }
-.pt5 { padding-top: 1.25rem; }
-.pt6 { padding-top: 1.5rem; }
+.pt1 { padding-top: rhythm(0.25rem, 1.5rem, 1); }
+.pt2 { padding-top: rhythm(0.25rem, 1.5rem, 2); }
+.pt3 { padding-top: rhythm(0.25rem, 1.5rem, 3); }
+.pt4 { padding-top: rhythm(0.25rem, 1.5rem, 4); }
+.pt5 { padding-top: rhythm(0.25rem, 1.5rem, 5); }
+.pt6 { padding-top: rhythm(0.25rem, 1.5rem, 6); }
 
 .pr0 { padding-right: 0; }
-.pr1 { padding-right: 0.25rem; }
-.pr2 { padding-right: 0.5rem; }
-.pr3 { padding-right: 0.75rem; }
-.pr4 { padding-right: 1rem; }
-.pr5 { padding-right: 1.25rem; }
-.pr6 { padding-right: 1.5rem; }
+.pr1 { padding-right: rhythm(0.25rem, 1.5rem, 1); }
+.pr2 { padding-right: rhythm(0.25rem, 1.5rem, 2); }
+.pr3 { padding-right: rhythm(0.25rem, 1.5rem, 3); }
+.pr4 { padding-right: rhythm(0.25rem, 1.5rem, 4); }
+.pr5 { padding-right: rhythm(0.25rem, 1.5rem, 5); }
+.pr6 { padding-right: rhythm(0.25rem, 1.5rem, 6); }
 
 .pb0 { padding-bottom: 0; }
-.pb1 { padding-bottom: 0.25rem; }
-.pb2 { padding-bottom: 0.5rem; }
-.pb3 { padding-bottom: 0.75rem; }
-.pb4 { padding-bottom: 1rem; }
-.pb5 { padding-bottom: 1.25rem; }
-.pb6 { padding-bottom: 1.5rem; }
+.pb1 { padding-bottom: rhythm(0.25rem, 1.5rem, 1); }
+.pb2 { padding-bottom: rhythm(0.25rem, 1.5rem, 2); }
+.pb3 { padding-bottom: rhythm(0.25rem, 1.5rem, 3); }
+.pb4 { padding-bottom: rhythm(0.25rem, 1.5rem, 4); }
+.pb5 { padding-bottom: rhythm(0.25rem, 1.5rem, 5); }
+.pb6 { padding-bottom: rhythm(0.25rem, 1.5rem, 6); }
 
 .pl0 { padding-left: 0; }
-.pl1 { padding-left: 0.25rem; }
-.pl2 { padding-left: 0.5rem; }
-.pl3 { padding-left: 0.75rem; }
-.pl4 { padding-left: 1rem; }
-.pl5 { padding-left: 1.25rem; }
-.pl6 { padding-left: 1.5rem; }
+.pl1 { padding-left: rhythm(0.25rem, 1.5rem, 1); }
+.pl2 { padding-left: rhythm(0.25rem, 1.5rem, 2); }
+.pl3 { padding-left: rhythm(0.25rem, 1.5rem, 3); }
+.pl4 { padding-left: rhythm(0.25rem, 1.5rem, 4); }
+.pl5 { padding-left: rhythm(0.25rem, 1.5rem, 5); }
+.pl6 { padding-left: rhythm(0.25rem, 1.5rem, 6); }
 
 /* Outline */
 .outline { outline: 1px solid; }
@@ -263,12 +269,12 @@
 .bb { border-bottom-width: 1px; border-style: solid; }
 .bl { border-left-width: 1px; border-style: solid; }
 
-.br1 { border-radius: .125rem; }
-.br2 { border-radius: .25rem; }
-.br3 { border-radius: .5rem; }
-.br4 { border-radius: 1rem; }
-.br5 { border-radius: 2rem; }
-.br6 { border-radius: 4rem; }
+.br1 { border-radius: rhythm(0.125rem, 4rem, 1); }
+.br2 { border-radius: rhythm(0.125rem, 4rem, 2); }
+.br3 { border-radius: rhythm(0.125rem, 4rem, 3); }
+.br4 { border-radius: rhythm(0.125rem, 4rem, 4); }
+.br5 { border-radius: rhythm(0.125rem, 4rem, 5); }
+.br6 { border-radius: rhythm(0.125rem, 4rem, 6); }
 .br100 { border-radius: 100%; }
 .pill { border-radius: 9999px; }
 
@@ -281,12 +287,12 @@
 .dashed { border-style: dashed; }
 .solid { border-style: solid; }
 
-.bw1 { border-width: .125rem; }
-.bw2 { border-width: .25rem; }
-.bw3 { border-width: .5rem; }
-.bw4 { border-width: 1rem; }
-.bw5 { border-width: 2rem; }
-.bw6 { border-width: 4rem; }
+.bw1 { border-width: rhythm(0.125rem, 4rem, 1); }
+.bw2 { border-width: rhythm(0.125rem, 4rem, 2); }
+.bw3 { border-width: rhythm(0.125rem, 4rem, 3); }
+.bw4 { border-width: rhythm(0.125rem, 4rem, 4); }
+.bw5 { border-width: rhythm(0.125rem, 4rem, 5); }
+.bw6 { border-width: rhythm(0.125rem, 4rem, 6); }
 
 .bt0 { border-top-width: 0; }
 .br0 { border-right-width: 0; }
@@ -295,12 +301,12 @@
 
 /* Opacity */
 .o0 { opacity: 0; }
-.o1 { opacity: 0.05; }
-.o2 { opacity: 0.2; }
-.o3 { opacity: 0.4; }
-.o4 { opacity: 0.6; }
-.o5 { opacity: 0.8; }
-.o6 { opacity: 1; }
+.o1 { opacity: rhythm(0.05, 1, 1); }
+.o2 { opacity: rhythm(0.05, 1, 2); }
+.o3 { opacity: rhythm(0.05, 1, 3); }
+.o4 { opacity: rhythm(0.05, 1, 4); }
+.o5 { opacity: rhythm(0.05, 1, 5); }
+.o6 { opacity: rhythm(0.05, 1, 6); }
 
 .o10 { opacity: .1; }
 .o20 { opacity: .2; }
@@ -324,12 +330,12 @@
 
 /* Widths */
 .w0 { width: 0; }
-.w1 { width: 1rem; }
-.w2 { width: 2rem; }
-.w3 { width: 3rem; }
-.w4 { width: 4rem; }
-.w5 { width: 5rem; }
-.w6 { width: 6rem; }
+.w1 { width: rhythm(1rem, 6rem, 1); }
+.w2 { width: rhythm(1rem, 6rem, 2); }
+.w3 { width: rhythm(1rem, 6rem, 3); }
+.w4 { width: rhythm(1rem, 6rem, 4); }
+.w5 { width: rhythm(1rem, 6rem, 5); }
+.w6 { width: rhythm(1rem, 6rem, 6); }
 
 .w10 { width: 10%; }
 .w20 { width: 20%; }
@@ -345,12 +351,12 @@
 .w100 { width: 100%; }
 
 /* Max widths */
-.mw1 { max-width: 2rem; }
-.mw2 { max-width: 4rem; }
-.mw3 { max-width: 8rem; }
-.mw4 { max-width: 16rem; }
-.mw5 { max-width: 32rem; }
-.mw6 { max-width: 64rem; }
+.mw1 { max-width: rhythm(2rem, 64rem, 1); }
+.mw2 { max-width: rhythm(2rem, 64rem, 2); }
+.mw3 { max-width: rhythm(2rem, 64rem, 3); }
+.mw4 { max-width: rhythm(2rem, 64rem, 4); }
+.mw5 { max-width: rhythm(2rem, 64rem, 5); }
+.mw6 { max-width: rhythm(2rem, 64rem, 6); }
 
 .mw10 { max-width: 10%; }
 .mw20 { max-width: 20%; }
@@ -375,12 +381,12 @@
 .mw100vw { max-width: 100vw; }
 
 /* Min widths */
-.minw1 { min-width: 2rem; }
-.minw2 { min-width: 4rem; }
-.minw3 { min-width: 8rem; }
-.minw4 { min-width: 16rem; }
-.minw5 { min-width: 32rem; }
-.minw6 { min-width: 64rem; }
+.minw1 { min-width: rhythm(2rem, 64rem, 1); }
+.minw2 { min-width: rhythm(2rem, 64rem, 2); }
+.minw3 { min-width: rhythm(2rem, 64rem, 3); }
+.minw4 { min-width: rhythm(2rem, 64rem, 4); }
+.minw5 { min-width: rhythm(2rem, 64rem, 5); }
+.minw6 { min-width: rhythm(2rem, 64rem, 6); }
 
 .minw10 { min-width: 10%; }
 .minw20 { min-width: 20%; }
@@ -406,12 +412,12 @@
 
 /* Heights */
 .h0 { height: 0; }
-.h1 { height: 1rem; }
-.h2 { height: 2rem; }
-.h3 { height: 3rem; }
-.h4 { height: 4rem; }
-.h5 { height: 5rem; }
-.h6 { height: 6rem; }
+.h1 { height: rhythm(1rem, 6rem, 1); }
+.h2 { height: rhythm(1rem, 6rem, 2); }
+.h3 { height: rhythm(1rem, 6rem, 3); }
+.h4 { height: rhythm(1rem, 6rem, 4); }
+.h5 { height: rhythm(1rem, 6rem, 5); }
+.h6 { height: rhythm(1rem, 6rem, 6); }
 
 .h10 { height: 10%; }
 .h20 { height: 20%; }
@@ -427,12 +433,12 @@
 .h100 { height: 100%; }
 
 /* Max heights */
-.mh1 { max-height: 2rem; }
-.mh2 { max-height: 4rem; }
-.mh3 { max-height: 8rem; }
-.mh4 { max-height: 16rem; }
-.mh5 { max-height: 32rem; }
-.mh6 { max-height: 64rem; }
+.mh1 { max-height: rhythm(2rem, 64rem, 1); }
+.mh2 { max-height: rhythm(2rem, 64rem, 2); }
+.mh3 { max-height: rhythm(2rem, 64rem, 3); }
+.mh4 { max-height: rhythm(2rem, 64rem, 4); }
+.mh5 { max-height: rhythm(2rem, 64rem, 5); }
+.mh6 { max-height: rhythm(2rem, 64rem, 6); }
 
 .mh10 { max-height: 10%; }
 .mh20 { max-height: 20%; }
@@ -457,12 +463,12 @@
 .mh100vh { max-height: 100vh; }
 
 /* Min heights */
-.minh1 { min-height: 2rem; }
-.minh2 { min-height: 4rem; }
-.minh3 { min-height: 8rem; }
-.minh4 { min-height: 16rem; }
-.minh5 { min-height: 32rem; }
-.minh6 { min-height: 64rem; }
+.minh1 { min-height: rhythm(2rem, 64rem, 1); }
+.minh2 { min-height: rhythm(2rem, 64rem, 2); }
+.minh3 { min-height: rhythm(2rem, 64rem, 3); }
+.minh4 { min-height: rhythm(2rem, 64rem, 4); }
+.minh5 { min-height: rhythm(2rem, 64rem, 5); }
+.minh6 { min-height: rhythm(2rem, 64rem, 6); }
 
 .minh10 { min-height: 10%; }
 .minh20 { min-height: 20%; }
