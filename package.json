@@ -1,14 +1,16 @@
 {
   "name": "lagom-css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Functional, utility-first CSS",
   "main": "dist/lagom.min.css",
   "scripts": {
-    "build": "postcss src/*.css > dist/lagom.min.css",
-    "storybook": "start-storybook",
-    "build-storybook": "build-storybook -c .storybook -o docs",
-    "test": "loki test",
-    "approve": "loki approve"
+    "stylus": "stylus src/lagom.styl --out .temp/lagom.css",
+    "postcss": "postcss .temp/lagom.css > dist/lagom.min.css",
+    "build": "npm run stylus && npm run postcss",
+    "storybook:start": "start-storybook --port 6042",
+    "storybook:build": "build-storybook -c .storybook -o docs",
+    "loki:test": "loki test --port 6042",
+    "loki:approve": "loki approve"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,7 @@
   "homepage": "https://github.com/shwilliam/lagom-css#readme",
   "devDependencies": {
     "@babel/core": "^7.4.0",
-    "@storybook/react": "^5.0.6",
+    "@storybook/react": "^5.0.11",
     "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
     "cssnano": "^4.1.10",
@@ -41,7 +43,8 @@
     "loki": "^0.15.0",
     "postcss-cli": "^6.1.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "stylus": "^0.54.5"
   },
   "loki": {
     "diffingEngine": "looks-same",

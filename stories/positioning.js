@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-['relative', 'absolute', 'fixed', 'static', 1, 2, 3, 4, 5, 6]
+['relative', 'absolute', 'fixed', 'static', 0, 1, 2, 3, 4, 5, 6]
   .forEach(modifier => {
     if (typeof modifier === 'number') {
       ['top', 'right', 'bottom', 'left'].forEach(side => {
