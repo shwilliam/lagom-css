@@ -23,7 +23,7 @@ function loadStories() {
   require('../stories/border-width.js')
   require('../stories/border-side-reset.js')
   require('../stories/opacity.js')
-  require('../stories/input-resets.js')
+  require('../stories/resets.js')
   require('../stories/widths.js')
   require('../stories/max-widths.js')
   require('../stories/min-widths.js')
