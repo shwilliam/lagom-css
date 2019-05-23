@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-storiesOf('input resets', module)
+storiesOf('resets', module)
   .add(
     'reset-list', () => (<>
       <ul className="reset-list">
