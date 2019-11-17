@@ -13,7 +13,7 @@ You can find an overview of the available styles in use [here](https://shwilliam
 
 ## Getting started
 
-The easiest way to use this library is to drop the following link tag in the head of your HTML file:
+The easiest way to use this library is to paste the following link tag in the head of your HTML file:
 
 ```html
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/lagom-css" />
