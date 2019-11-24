@@ -13,17 +13,17 @@ You can find an overview of the available styles in use [here](https://shwilliam
 
 ## Getting started
 
-The easiest way to use this library is probably to drop the following link tag in the head of your HTML file:
+The easiest way to use this library is to paste the following link tag in the head of your HTML file:
 
 ```html
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/lagom-css" />
 ```
 
-If you are using a bundler, such as webpack, you can install the package from npm by running `npm i lagom-css` and import it in JavaScript (`import 'lagom-css'`).
+If you are using a bundler, such as webpack, install the package from npm by running `npm i lagom-css` and import it in JavaScript (`import 'lagom-css'`).
 
 ## Unused CSS
 
-Due to their nature, utility CSS libraries can be quite large. If performance or file-size matters to you (or you're using this production), I would recommend using a tool such as [PurifyCSS](https://github.com/purifycss/purifycss) to remove unused CSS. Doing this, the CSS file that you would want to target is `/dist/lagom.min.css` in this package (download it [here](https://raw.githubusercontent.com/shwilliam/lagom-css/master/dist/lagom.min.css)).
+Utility CSS libraries can be quite large. If performance or file-size matters to you (or you're using this production), I would recommend using a tool such as [PurifyCSS](https://github.com/purifycss/purifycss) to remove unused CSS. Doing this, the CSS file that you would want to target is `/dist/lagom.min.css` in this package (download it [here](https://raw.githubusercontent.com/shwilliam/lagom-css/master/dist/lagom.min.css)).
 
 ## Contributing
 
