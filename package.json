@@ -29,7 +29,7 @@
   "homepage": "https://github.com/shwilliam/lagom-css#readme",
   "devDependencies": {
     "@babel/core": "^7.4.0",
-    "@storybook/react": "^5.0.11",
+    "@storybook/react": "^6.5.13",
     "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
     "cssnano": "^4.1.10",
